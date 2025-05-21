@@ -4,31 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isimo-Sezulu</title>
-    <link
-      rel="stylesheet"
-      href="C:\Users\cc ladysmith\Documents\GitHub\Isimo-Sezulu\style.css"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="isimo-sezulu">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
-
-        <main>
+      </header>
+      <main>
+        <div class="isimo-sezulu-data">
           <div>
-            <h1>Ladysmith</h1>
-            <p>
+            <h1 class="isimo-sezulu-city" id="city">Ladysmith</h1>
+            <p class="isimo-sezulu-details">
               Tuesday 14:49, scattered clouds
               <br />
-              Humidity: 66%, wind: 3.13km/h
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
             </p>
           </div>
-          <div>🌥️12°C</div>
-        </main>
-      </header>
+          <div class="isimo-sezulu-temperature-container">
+            <div class="isimo-sezulu-icon">🌤️</div>
+            <div class="isimo-sezulu-temperature">21</div>
+            <div class="isimo-sezulu-unit">°C</div>
+          </div>
+        </div>
+      </main>
 
       <footer>
         This project is Coded by
@@ -45,5 +53,6 @@
         >
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
